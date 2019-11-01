@@ -14,10 +14,13 @@ public class MapTest {
         System.out.println("\nListe de map\n");
         System.out.println(detaliiPersoane);
         for (int i = 0; i < detaliiPersoane.size(); i++) {
+            System.out.println("Afisare prenume persoana " + i + "-" + detaliiPersoane.get(i).get("Prenume"));
             for (Map.Entry<String, String> entry : detaliiPersoane.get(i).entrySet()) {
                 System.out.println(entry.getKey() + " - " + entry.getValue());
             }
+
             System.out.println();
+
         }
     }
 
@@ -29,5 +32,6 @@ public class MapTest {
         for (Map.Entry<String, String> entry : prenumePersoane.entrySet()) {
             System.out.println(entry.getKey() + " - " + entry.getValue());
         }
+        System.out.println("Prenumele primei persoane este: "+prenumePersoane.get("Prenume1"));
     }
 }

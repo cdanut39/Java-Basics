@@ -55,9 +55,7 @@ public class InsertInListFromAnotherList {
                 .entrySet()
                 .stream()
                 .sorted(comparingByValue())
-                .collect(
-                        toMap(e -> e.getKey(), e -> e.getValue(), (e1, e2) -> e2,
-                                LinkedHashMap::new));
+                .collect(toMap(e -> e.getKey(), e -> e.getValue(), (e1, e2) -> e2, LinkedHashMap::new));
         return collect;
     }
 

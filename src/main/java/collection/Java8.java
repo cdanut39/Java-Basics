@@ -18,6 +18,7 @@ public class Java8 {
 
         String[] fruits = {"apple", "banana", "peach", "strawberry", "cherry", "avocado", "apricot", "pineapple"};
 
+
         System.out.println("\nStarts with a");
         Arrays.stream(fruits).filter(x -> x.startsWith("a")).sorted().forEach(x -> System.out.printf("-%s\n", x));
 
@@ -44,7 +45,6 @@ public class Java8 {
 
         System.out.println("\nSorting elements by length: ");
         Arrays.stream(fruits).sorted(Comparator.comparing(String::length)).forEach(x -> System.out.printf("-%s\n", x));
-
 
 
     }
